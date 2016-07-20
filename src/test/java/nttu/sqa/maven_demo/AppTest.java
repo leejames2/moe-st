@@ -36,19 +36,5 @@ public class AppTest
         assertTrue( true );
     }
     
-    private DiffDemo diffDemo;
-    
-    @Before
-    public void setup() {
-    	diffDemo = new DiffDemo();
-    }
-    
-    @Test(expected=Exception.class)
-    public void testDiffException() throws Exception {
-    	String a = "";
-    	String b = "abc";
-    	diffDemo.getDiff(a, b);
-    }
-    
     
 }
